@@ -6,11 +6,10 @@ on:
       - master
   pull_request:
     branches:
-      - master
+      - main
 jobs:
   Fuzzing:
     runs-on: ubuntu-latest
-    if: github.repository == 'SELinuxProject/selinux'
     strategy:
       fail-fast: false
       matrix:
